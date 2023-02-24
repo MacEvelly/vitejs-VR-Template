@@ -6,7 +6,6 @@ import { Instances } from '../Models';
 import { DartsScene } from '.';
 
 function MainScene() {
-  console.log(DartsScene);
   return (
     <Canvas shadows camera={{ position: [10, 10, 15], fov: 25 }}>
       <Suspense fallback={null}>
