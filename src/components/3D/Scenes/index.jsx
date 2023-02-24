@@ -1,3 +1,3 @@
-export { default as MainScene } from './MainScene.jsx';
+export { default as MainScene } from './MainScene';
 
-export { default as DartsScene} from './Darts/DartsScene'
+export { default as DartsScene } from './Darts/DartsScene';

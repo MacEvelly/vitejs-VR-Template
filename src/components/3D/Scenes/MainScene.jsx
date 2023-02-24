@@ -13,9 +13,7 @@ function MainScene() {
         <XR>
           <CameraLeva />
           <GridLeva />
-          <Instances>
-            <DartsScene scale={100} />
-          </Instances>
+          {/* <Instances>{<DartsScene /></Instances> */}
         </XR>
       </Suspense>
     </Canvas>
