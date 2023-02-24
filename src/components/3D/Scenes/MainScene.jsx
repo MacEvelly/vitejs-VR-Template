@@ -1,21 +1,25 @@
 import { Canvas } from '@react-three/fiber';
 import { memo, Suspense } from 'react';
-import { CameraLeva, GridLeva } from './Env';
+import { CameraLeva, GridLeva } from '../Env';
 import { XR } from '@react-three/xr';
-import { Instances } from '../3D/Models';
+import { Instances } from '../Models';
+import { DartsScene } from '.';
 
-function Scene3D() {
+function MainScene() {
+  console.log(DartsScene);
   return (
     <Canvas shadows camera={{ position: [10, 10, 15], fov: 25 }}>
       <Suspense fallback={null}>
         <XR>
           <CameraLeva />
           <GridLeva />
-          <Instances></Instances> 
+          <Instances>
+            <DartsScene scale={100} />
+          </Instances>
         </XR>
       </Suspense>
     </Canvas>
   );
 }
 
-export default memo(Scene3D);
+export default memo(MainScene);

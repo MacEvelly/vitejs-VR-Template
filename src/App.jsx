@@ -1,11 +1,11 @@
 import './App.css';
-import Scene3D from './components/3D/Scene3D';
-import { VRButton, XR } from '@react-three/xr';
+import { MainScene } from './components/3D/Scenes';
+import { VRButton } from '@react-three/xr';
 
 function App() {
   return (
     <>
-      <Scene3D />
+      <MainScene />
       <VRButton />
     </>
   );
