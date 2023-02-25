@@ -3,7 +3,7 @@ import { useControls, folder } from 'leva'
 import { CameraHelper } from 'three'
 import { useHelper } from '@react-three/drei'
 
-function DirectionalLightLeva() {
+function LightDirectional() {
   /////////////////////////////////////////////////////////////////////////////////////
   // LEVA Variables
   /////////////////////////////////////////////////////////////////////////////////////
@@ -83,4 +83,4 @@ function DirectionalLightLeva() {
   )
 }
 
-export default memo(DirectionalLightLeva)
+export default memo(LightDirectional)

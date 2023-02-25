@@ -10,8 +10,6 @@ export const context = createContext();
 
 export function Instances({ children, ...props }) {
   const { nodes } = useGLTF(VRTemplate);
-  console.log(VRTemplate);
-  return null;
   const instances = useMemo(
     () => ({
       WallParkCorner: nodes.WallParkCorner01,
