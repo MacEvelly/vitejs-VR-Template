@@ -6,3 +6,6 @@ export { default as Font } from './fonts/font.json';
 
 /****************************************************************** Audio Files */
 export { default as Audio } from './audio/Atmosphere_Stereo.ogg';
+
+/****************************************************************** Audio Files */
+export { default as Poster } from './images/PulpFiction.webp';
