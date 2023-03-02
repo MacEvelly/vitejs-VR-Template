@@ -5,6 +5,7 @@ import { XR } from "@react-three/xr";
 import { Instances } from "../Models";
 import DartsScene from "./Darts/DartsScene";
 import { Environment } from "@react-three/drei";
+import VRScene from "../VR/VRScene";
 
 function MainScene() {
   console.log("MainScene")
@@ -16,6 +17,7 @@ function MainScene() {
           <GridLeva />
           <ambientLight/>
           <Environment preset={'studio'} />
+          <VRScene/>
           <Instances>
               <DartsScene/>
           </Instances>
